@@ -24,7 +24,7 @@ app.post('/api/email', (req, res) => {
         from: `${process.env.MAILGUN_FROM}`,
         to: `${email}`,
         subject: `${subject}`,
-        html: `{${message}}`,
+        html: `${message}`,
         'o:tracking-clicks': 'no'
       },
       (error, body) => {

@@ -14,7 +14,7 @@ export const htmlTemplate = (data) => {
             <table align="center" style="border-bottom: solid 1px #E3E3E3; margin-bottom: 1%;" cellpadding="5" cellspacing="0"  border-collapse="collapse" width="100%">
                 <tr>
                     <td>
-                        <b></b><div>Kode Undangan</div></b>
+                        <b><div>Kode Undangan</div></b>
                     </td>
                     <td>
                         <div>${data?.kode_undangan}</div>
@@ -22,15 +22,15 @@ export const htmlTemplate = (data) => {
                 </tr>
                 <tr>
                     <td>
-                        <b></b><div>Nama Lengkap</div></b>
+                        <b><div>Nama Lengkap</div></b>
                     </td>
                     <td>
-                        <div>${data?.full_name}</div>
+                        <div>${data?.salutation}</div><div>${data?.full_name}</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <b></b><div>Email</div></b>
+                        <b><div>Email</div></b>
                     </td>
                     <td>
                         <div>${data?.email}</div>
